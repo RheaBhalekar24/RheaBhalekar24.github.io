@@ -1,55 +1,120 @@
-<nav>
-  <a href="/">Home</a>
-  <a href="/about">About</a>
-  <a href="/projects">Projects</a>
-  <a href="/publications">Publications</a>
-  <a href="/contact">Contact</a>
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="/" class="nav-logo">
+      <img src="/rhea2.jpg" alt="Logo" class="logo-img">
+    </a>
+    <ul class="nav-menu">
+      <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="/about.html" class="nav-link">About</a></li>
+      <li class="nav-item"><a href="/projects.html" class="nav-link">Projects</a></li>
+      <li class="nav-item"><a href="/publications.html" class="nav-link">Publications</a></li>
+      <li class="nav-item"><a href="/contact.html" class="nav-link">Contact</a></li>
+    </ul>
+  </div>
 </nav>
 
-<!-- Add space below so content is not hidden -->
-<div style="height:60px;"></div>
-
 <style>
-nav {
-  background: #358D8B; 
-  padding: 10px 20px;
-  text-align: center;
-  position: fixed;
+.navbar {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
   top: 0;
-  left: 0;
-  width: 100%;
   z-index: 1000;
+  padding: 1rem 0;
 }
 
-nav a {
-  margin: 0 15px;
-  color: white;
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+}
+
+.nav-link {
   text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
-nav a:hover {
-  text-decoration: underline;
-  
+.nav-link:hover {
+  color: #0066cc;
 }
 
 .hero {
-  background: linear-gradient(90deg, #0e6ba8, #2ecc71);
-  padding: 120px 0 80px 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 80px 20px;
   text-align: center;
   color: white;
 }
 
 .hero-content {
+  max-width: 800px;
+  margin: 0 auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 30px;
+  gap: 2rem;
 }
 
 .hero-photo {
-  width: 160px;
-  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid white;
+  object-fit: cover;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
 }
 
-</style>
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: 700;
+}
 
+.tagline {
+  font-size: 1.5rem;
+  opacity: 0.95;
+}
+
+.content-section {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-photo {
+    width: 150px;
+    height: 150px;
+  }
+}
+</style>
