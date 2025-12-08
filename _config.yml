@@ -1,6 +1,8 @@
 title: Hi, I am  Rhea Bhalekar
 description: A Robotics Engineer 
 theme: jekyll-theme-cayman
+include:
+  - _includes
 navbar:
   - title: "Home"
     url: /
