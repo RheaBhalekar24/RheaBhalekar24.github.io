@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Hi I am Rhea 
+
 ---
 {% include navbar.html %}
 
