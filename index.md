@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Home
 ---
 
-Write your bio here.
+Welcome to my site!
