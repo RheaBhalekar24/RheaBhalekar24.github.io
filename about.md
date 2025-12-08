@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: About
 ---
 {% include navbar.html %}
@@ -23,6 +23,17 @@ title: About
       <li>Git Version Control</li>
       <li>Robot Operating System (ROS)</li>
     </ul>
+
+
+    <h3>Skills</h3>
+    <ul class="skills-list">
+      <li><i class="fab fa-python"></i> Python, NumPy, Matplotlib</li>
+      <li><i class="fas fa-cube"></i> PyBullet Simulation</li>
+      <li><i class="fas fa-helicopter"></i> Quadrotor Control & Trajectory Planning</li>
+      <li><i class="fab fa-git-alt"></i> Git Version Control</li>
+      <li><i class="fas fa-robot"></i> Robot Operating System (ROS)</li>
+    </ul>
+    
   </div>
 </div>
 
