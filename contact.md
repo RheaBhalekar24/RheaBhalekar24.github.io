@@ -5,4 +5,7 @@ title: Contact
 {% include navbar.html %}
 
 
-Email: your_email@domain.com
+Email: rbhalekar@wpi.edu
+Github: https://github.com/RheaBhalekar24
+LinkedIN: https://www.linkedin.com/in/rheabhalekar0802/
+
